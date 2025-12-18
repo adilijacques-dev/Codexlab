@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeXLab — Cours</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">ADILI KAUNDA  Jacques</a></h1>
+      <div class="header-actions">
+        <input id="search" class="search-input" type="search" placeholder="Rechercher un cours..." />
+        <button id="themeToggle" class="icon-btn" aria-label="Changer le thème">🌗</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <div id="course-container" class="reveal"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> CodeXLab</small>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="autofunctions.js"></script>
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

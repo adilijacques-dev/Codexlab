@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adil@Site_index</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"> ADILI KAUNDA Jacques</h1>
+      <div class="header-actions">
+        <input id="search" class="search-input" type="search" placeholder="Rechercher un cours..." />
+        <button id="themeToggle" class="icon-btn" aria-label="Changer le thème">🌗</button>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2> Mon voiyage de devellopement web et de CyberSecurite commence ICI</h2>
+          <p class="muted">Plateforme statique optimisée, animations légères et fonctionnalités automatiques.</p>
+        </div>
+        <div class="hero-media" id="hero-slider" aria-hidden="true">
+          <div class="slide active">ADILI KAUNDA </div>
+          <div class="slide">La Cybersecurite &amp; Reseaux</div>
+          <div class="slide">L'admistration reseaux &amp; JS</div>
+          <div class="slide">le Web &amp; App Mobile</div>
+          <div class="slide">le bash &amp; C+</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section>
+      <h3>Nos cours</h3>
+      <div id="courses" class="grid"></div>
+      <div id="no-results" class="no-results" hidden>Aucun cours trouvé.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> CodeXLab — Mon premier site — Adili_kaunda</small>
+      <button id="openLast" class="link-btn" title="Ouvrir le dernier cours visité" hidden>Ouvrir dernier cours</button>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script src="autofunctions.js"></script>
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
